@@ -1,0 +1,10 @@
+11:06:29 **** Incremental Build of configuration Debug for project HOLI_MUNDO ****
+make -j12 all 
+arm-none-eabi-size   HOLI_MUNDO.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6960	     36	   1572	   8568	   2178	HOLI_MUNDO.elf
+Finished building: default.size.stdout
+ 
+
+11:06:29 Build Finished. 0 errors, 0 warnings. (took 238ms)
+

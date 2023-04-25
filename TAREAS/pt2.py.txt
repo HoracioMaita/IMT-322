@@ -1,0 +1,29 @@
+import funcionPul
+
+def state(x): #DEFINO FUNCION DE PULSADOR
+	X= not x
+	return x
+
+
+def pt2 (pul, led, b): ## DEFINO 
+
+	a = GPIO.input (pul) # leo el pulsador
+
+	print (b) 
+	if (a == 0):
+		b = not b #asigno a mi estado
+
+	time.sleep(0.3)
+
+
+	if (b):
+		GPIO.output(led, GPIO.HIGH) print(PRENDIDO)
+
+	else:
+		GPIO.output(led, GPIO. LOW) print(APAGADO)
+
+
+def inicializar (pul, led): 
+	GPIO.setmode (GPIO.BOARD) # pines fisicos de la placa GPIO.setup(pul, GPIO.IN, 		pull_up_down=GPIO. PUD_UP) #pin pulsador
+	GPIO.setup(led, GPIO.OUT) # pin led
+	print('INICIALIZADO')
